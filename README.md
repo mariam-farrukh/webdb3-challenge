@@ -18,10 +18,10 @@ For this lab you will
 
 Visit [SQL Try Editor at W3Schools.com](https://www.w3schools.com/Sql/tryit.asp?filename=trysql_select_top) using the **Google Chrome (or Chromium if you use Linux) browser** and write _SQL queries_ for the following requirements:
 
-- Display the ProductName and CategoryName for all products in the database. Shows 76 records.
-- Display the OrderID and ShipperName for all orders placed before January 9, 1997. Shows 161 records.
-- Display all ProductNames and Quantities placed on order 10251. Sort by ProductName. Shows 3 records.
-- Display the OrderID, CustomerName and the employee's LastName for every order. All columns should be labeled clearly. Displays 196 records.
+- [X] Display the ProductName and CategoryName for all products in the database. Shows 77 records.
+- [X] Display the OrderID and ShipperName for all orders placed before January 9, 1997. Shows 161 records.
+- [X] Display all ProductNames and Quantities placed on order 10251. Sort by ProductName. Shows 3 records.
+- [X] Display the OrderID, CustomerName and the employee's LastName for every order. All columns should be labeled clearly. Displays 196 records.
 
 ### Database Methods
 
@@ -76,14 +76,14 @@ The following endpoints are available to test the functionality of the model met
 - `GET /api/schemes/:id` - gets a single scheme
 - `GET /api/schemes/:id/steps` - gets all steps for a given scheme, ordered correctly
 - `POST /api/schemes` - adds a new scheme
-- `PUT /api/schemes:id` - updates a given scheme
+- `PUT /api/schemes/:id` - updates a given scheme
 - `DELETE /api/schemes/:id` - removes a given scheme and all associated steps
 
 ## Stretch Problems
 
-- In [SQL Try Editor at W3Schools.com](https://www.w3schools.com/Sql/tryit.asp?filename=trysql_select_top):
-  - Displays CategoryName and a new column called Count that shows how many products are in each category. Shows 9 records.
-  - Display OrderID and a column called ItemCount that shows the total number of products placed on the order. Shows 196 records.
+- [X] In [SQL Try Editor at W3Schools.com](https://www.w3schools.com/Sql/tryit.asp?filename=trysql_select_top):
+  - [X] Displays CategoryName and a new column called Count that shows how many products are in each category. Shows 9 records.
+  - [X] Display OrderID and a column called ItemCount that shows the total number of products placed on the order. Shows 196 records.
 - Add the following method to your API
-  - `addStep(step, scheme_id)`: This method expects a step object and a scheme id. It inserts the new step into the database, correctly linking it to the intended scheme.
-  - You may use `POST /api/schemes/:id/addStep` to test this method.
+  - [X] `addStep(step, scheme_id)`: This method expects a step object and a scheme id. It inserts the new step into the database, correctly linking it to the intended scheme.
+  - [X] You may use `POST /api/schemes/:id/addStep` to test this method.
